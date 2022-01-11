@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li><a onclick="tMenu();" href="#">HOME</a></li>
+            <li><a onclick="tMenu();" href="#">About</a></li>
+            <li><a onclick="tMenu();" href="#">Team</a></li>
+            <li><a onclick="tMenu();" href="#">Contact</a></li>
+        </ul>
+    </div>
+    <section class="banner">
+        <header>
+            <h2 class="logo">LOGO</h2>
+            <div class="toggle" onclick="tMenu();">
+
+            </div>
+        </header>
+        <video src="./video/production%20ID_4753946.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Be Stronger </h2>
+            <h3>Never Give Up !</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias,
+                beatae delectus distinctio doloremque eum expedita fuga,
+                ipsa itaque neque nesciunt quas quibusdam reiciendis, repellat sequi suscipit totam voluptas voluptates.</p>
+            <a href="#">JOIN US</a>
+        </div>
+        <ul class="sci">
+            <li><a href="#"><img src="./img/instagram.png" alt=""></a></li>
+            <li><a href="#"><img src="./img/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="./img/twitter.png" alt=""></a></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function tMenu() {
+            var menuToggle = document.querySelector('.toggle');
+            var banner = document.querySelector('.banner');
+            menuToggle.classList.toggle('active');
+            banner.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
